@@ -8,11 +8,21 @@ default: &default
 
 development:
   <<: *default
-  database: git_app_development
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: 19731213
+  host: localhost
+  database: git-app_rails7_development
 
 test:
   <<: *default
-  database: git_app_test
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: 19731213
+  host: localhost
+  database: git-app_rails7_test
 
 production:
   <<: *default
