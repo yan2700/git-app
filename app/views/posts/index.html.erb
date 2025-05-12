@@ -1,2 +1,8 @@
 <h1>Posts#index</h1>
+
+<% if user_signed_in? %>
+  <p>ログイン中：<%= current_user.email %></p>
+<% else %>
+  <p>ログインしていません</p>
+<% end %>
 <p>折あぷ</p>
